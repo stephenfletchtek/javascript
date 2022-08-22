@@ -1,5 +1,9 @@
 const sayHello = (arg) => {
-  return (`Hello ${arg}`)
+  return `Hello ${arg}`;
 };
 
-module.exports = sayHello;
+const goodBye = (arg) => {
+  return `Bye! ${arg}`;
+};
+
+module.exports = { sayHello, goodBye };
