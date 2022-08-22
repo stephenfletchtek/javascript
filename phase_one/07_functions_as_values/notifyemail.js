@@ -10,4 +10,6 @@ const notify = (message, notify_func) => {
   return notify_func(message);
 }
 
-module.exports = { notifyByEmail, notifyByText, notify };
+console.log(notify("duck@makers.com", notifyByEmail))
+console.log(notify("07123 456789", notifyByText))
+// module.exports = { notifyByEmail, notifyByText, notify };

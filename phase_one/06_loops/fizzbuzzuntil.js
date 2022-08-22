@@ -12,4 +12,5 @@ const fizzbuzzUntil = (num) => {
   };
 }
 
-module.exports = fizzbuzzUntil
+fizzbuzzUntil(15)
+// module.exports = fizzbuzzUntil
