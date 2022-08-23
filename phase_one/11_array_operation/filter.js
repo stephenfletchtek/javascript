@@ -18,3 +18,4 @@ const filterLongNumbers = (to_filter) => {
 }
 
 console.log(filterLongNumbers(numbers));
+console.log(filterLongNumbers(['4763687363', '7867867862']));
