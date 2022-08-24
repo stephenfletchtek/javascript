@@ -1,5 +1,6 @@
 .vscode/
 phase_two/01_testing/node_modules/
 phase_two/01_fizzbuzz/node_modules/
+phase_two/02_search/node_modules/
 package-lock.json
 package.json
