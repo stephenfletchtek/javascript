@@ -20,4 +20,12 @@ describe('ShoppingBasket object', () => {
     shoppingbasket.addItem(fakeSkittle)
     expect(shoppingbasket.getTotalPrice()).toBe(12.97);
   });
+  it('discount a mars and check total', () => {
+    const shoppingbasket = new ShoppingBasket;
+    const fakeMars = { getPrice: () => 4.99 }
+    shoppingbasket.addItem(fakeMars)
+    shoppingbasket.applyDiscount(2.98)
+    result = shoppingbasket.getTotalPrice()
+    expect(Math.round(result + "e+2") / 100).toBe(2.01);
+  });
 });
