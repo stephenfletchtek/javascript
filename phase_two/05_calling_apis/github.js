@@ -1,7 +1,5 @@
 const GithubApi = require("./githubApi");
 
-GithubApi
-
 class Github {
   constructor(api) {
     this.api = api
@@ -21,6 +19,6 @@ class Github {
 module.exports = Github;
 
 // type in node to use
-// const github = new Github(new GithubApi)
-// github.fetch('sinatra/sinatra')
-// setTimeout(() => { console.log(github.getRepoData()) }, 1000)
+const github = new Github(new GithubApi)
+github.fetch('sinatra/sinatra')
+setTimeout(() => { console.log(github.getRepoData()) }, 1000)
