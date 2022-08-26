@@ -6,3 +6,10 @@ const fetchJson = (url, callback) => {
 }
 
 module.exports = fetchJson;
+
+// in node
+// const fetchJson = require('./fetchJson');
+
+// fetchJson('https://jsonplaceholder.typicode.com/todos', (response) => {
+//   console.log(response);
+// })
