@@ -5,11 +5,12 @@ class Thermostat {
   }
 
   getTemperature() {
-    return this.temperature;
+    return { temperature: this.temperature };
   }
 
   setPowerSavingMode(bool) {
     this.powersave = bool;
+    return { powersavingmode: this.powersave }
   }
 
   reset() {
