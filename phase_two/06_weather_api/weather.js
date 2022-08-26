@@ -29,9 +29,9 @@ module.exports = Weather;
 // console.log(weather.getWeatherData())
 
 // TO RUN IN THIS FILE
-const WeatherApi = require('./weatherapi')
-const WeatherView = require('./weatherview')
-const weather = new Weather(new WeatherApi, new WeatherView)
-weather.fetch('London')
+// const WeatherApi = require('./weatherapi')
+// const WeatherView = require('./weatherview')
+// const weather = new Weather(new WeatherApi, new WeatherView)
+// weather.fetch('London')
 // setTimeout(() => { console.log(weather.getWeatherData()) }, 1000)
-setTimeout(() => { console.log(weather.displayWeather()) }, 1000)
+// setTimeout(() => { console.log(weather.displayWeather()) }, 1000)
