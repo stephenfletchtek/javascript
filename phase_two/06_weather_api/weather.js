@@ -1,6 +1,8 @@
 class Weather {
-  constructor(api) {
+  constructor(api, view) {
     this.api = api
+    this.view = view
+    this.result = null;
   }
 
   fetch(city) {
@@ -11,6 +13,10 @@ class Weather {
   getWeatherData() {
     return this.result
   };
+
+  displayWeather() {
+    return this.view.displayWeather(this.result)
+  }
 };
 
 module.exports = Weather;
@@ -23,7 +29,9 @@ module.exports = Weather;
 // console.log(weather.getWeatherData())
 
 // TO RUN IN THIS FILE
-// const WeatherApi = require('./weatherapi')
-// const weather = new Weather(new WeatherApi)
-// weather.fetch('London')
+const WeatherApi = require('./weatherapi')
+const WeatherView = require('./weatherview')
+const weather = new Weather(new WeatherApi, new WeatherView)
+weather.fetch('London')
 // setTimeout(() => { console.log(weather.getWeatherData()) }, 1000)
+setTimeout(() => { console.log(weather.displayWeather()) }, 1000)
